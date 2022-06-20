@@ -14,7 +14,7 @@
     position: absolute;
     background-color: hsl(193, 100%, 96%);
     width: 100%;
-    height: 800px;
+    height: 700px;
     z-index: inherit;
     display: inline-block;
     overflow: hidden;
@@ -30,25 +30,55 @@
     bottom: 780px;
     width: 200px;
 }
+@media (min-width: 375px) and (max-width: 900px) {
+  .icon{
+    position: relative;
+    bottom: 58%;
+    width: 100px
+  }
+}
 .mockups{
     position: absolute;
     padding: 20px 20px;
     width: 50%;
-    left: 600px;
-    bottom: 50px;
+    left: 620px;
+    bottom: 80px;
+}
+@media (min-width: 375px) and (max-width: 900px) {
+.mockups{
+  position: absolute;
+  left: 15%;
+  width: 70%;
+  bottom: 20px;
+}
 }
 .section1 h1{
   position: relative;
-  bottom: 610px;
+  bottom: 770px;
   left: 100px
+}
+@media (min-width: 375px) and (max-width: 900px) {
+  .section1 h1{
+    position: relative;
+    bottom: 70%;
+    font-size: 100%;
+    left: 30%;
+  }
 }
 .section1 p{
   position: relative;
-  bottom: 570px;
+  bottom: 750px;
   left: 100px;
   font-family: 'Lexend Deca', sans-serif;
 }
-
+@media (min-width: 375px) and (max-width: 900px) {
+  .section1 p{
+    position: relative;
+    bottom: 65%;
+    font-size: 10px;
+    left: 120px;
+  }
+}
 .btn2{
   position: relative;
   padding: 15px 30px;
@@ -60,9 +90,16 @@
   font-family: 'Poppins', sans-serif;
   font-size: 10px;
   left: 100px;
-  bottom: 550px;
+  bottom: 725px;
   text-decoration: none;
   box-shadow: 5px 5px 30px 7px rgba(255, 255, 255, 0.25), -5px -5px 30px 7px rgba(219, 200, 200, 0.22);
+}
+@media (min-width: 375px) and (max-width: 900px) {
+  .btn2{
+    position: relative;
+    bottom: 60%;
+    left: 30%;
+  }
 }
 .btn2 a{
 text-decoration: none;
@@ -112,11 +149,19 @@ color: white;
       width: 100%; 
       left: 0; 
   }
-
+  @media (min-width: 375px) and (max-width: 900px) {
+    .btn1{
+      position: relative;
+      bottom: 78%;
+      left: 50%;
+      padding: 5px 15px;
+    font-size: 10px
+    }
+  }
   .card1{
   position: absolute;
   background: #fff;
-  top: 900px;
+  top: 800px;
   margin: 2em;
   display: inline-block;
   overflow: hidden;
@@ -131,7 +176,7 @@ color: white;
 .card2{
   position: absolute;
   background: #fff;
-  top: 1250px;
+  top: 1200px;
   margin: 2em;
   display: inline-block;
   overflow: hidden;
@@ -141,7 +186,18 @@ color: white;
   -moz-transition: 0.5s;-o-transition: 0.5s;-webkit-transition: 0.5s;transition: 0.5s;
   -webkit-box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);-moz-box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);
 }
-
+@media (min-width: 375px) and (max-width: 900px) {
+  .card1{
+    position: absolute;
+    margin: 1em;
+  }
+}
+@media (min-width: 375px) and (max-width: 900px) {
+  .card2{
+    position: absolute;
+    margin: 1em;
+  }
+}
 
 .card3{
   position: absolute;
@@ -156,25 +212,64 @@ color: white;
   -moz-transition: 0.5s;-o-transition: 0.5s;-webkit-transition: 0.5s;transition: 0.5s;
   -webkit-box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);-moz-box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);
 }
+@media (min-width: 375px) and (max-width: 900px) {
+  .card3{
+    position: absolute;
+    margin: 1em;
+  }
+}
 .card1 img{
   position: absolute;
   left: 60%;
   margin: 2em;
+}
+@media (min-width: 375px) and (max-width: 900px) {
+  .card1 img{
+    position: absolute;
+    margin: .2em;
+    width: 200px;
+    top: 50px
+  }
 }
 .card2 img{
   position: absolute;
   left: 5%;
   margin: 2em;
 }
+@media (min-width: 375px) and (max-width: 900px) {
+  .card2 img{
+    position: absolute;
+    margin: .2em;
+    width: 200px;
+    top: 50px
+  }
+}
 .card3 img{
   position: absolute;
   left: 60%;
   margin: 2em;
 }
+@media (min-width: 375px) and (max-width: 900px) {
+  .card3 img{
+    position: absolute;
+    margin: .2em;
+    width: 200px;
+    top: 50px
+  }
+}
 .card1 h1 {
   position: absolute;
   left: 9%;
   margin: 3em;
+}
+@media (min-width: 375px) and (max-width: 900px) {
+  .card1 h1{
+    position: absolute;
+    margin: 1em;
+    left: 1%;
+    top: 30%;
+    font-size: 20px;
+  }
 }
 .card1 p{
   position: absolute;
@@ -182,10 +277,27 @@ color: white;
   margin: 10em;
   font-family: 'Lexend Deca', sans-serif;
 }
+@media (min-width: 375px) and (max-width: 900px) {
+  .card1 p{
+    position: absolute;
+    font-size: 10px;
+    top: 50%;
+    margin: 0.1em ;
+   
+  }
+}
 .card2 h1 {
   position: absolute;
   left: 48%;
   margin: 1.5em;
+}
+@media (min-width: 375px) and (max-width: 900px) {
+  .card2 h1{
+    position: absolute;
+    margin: 2.5em;
+    left: 45%;
+    font-size: 20px;
+  }
 }
 .card2 p{
   position: absolute;
@@ -193,10 +305,27 @@ color: white;
   margin: 7em;
   font-family: 'Lexend Deca', sans-serif;
 }
+@media (min-width: 375px) and (max-width: 900px) {
+  .card2 p{
+    position: absolute;
+    font-size: 10px;
+    top: 30%;
+    margin: 5em ;
+  }
+}
 .card3 h1 {
   position: absolute;
   left: 10%;
   margin: 3em;
+}
+@media (min-width: 375px) and (max-width: 900px) {
+  .card3 h1{
+    position: absolute;
+    margin: 0.5em;
+    top: 50%;
+    left: 5%;
+    font-size: 20px;
+  }
 }
 .card3 p{
   position: absolute;
@@ -204,7 +333,15 @@ color: white;
   margin: 10em;
   font-family: 'Lexend Deca', sans-serif;
 }
-
+@media (min-width: 375px) and (max-width: 900px) {
+  .card3 p{
+    position: absolute;
+    font-size: 10px;
+    top: 70%;
+    margin: 0.1em ;
+ 
+  }
+}
 
 .card4{
   position: absolute;
@@ -219,6 +356,13 @@ color: white;
   width: 50%;
   -moz-transition: 0.5s;-o-transition: 0.5s;-webkit-transition: 0.5s;transition: 0.5s;
   -webkit-box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);-moz-box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 375px) and (max-width: 900px) {
+  .card4{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+  }
 }
 .card4 .btn3{
   position: relative;
@@ -235,6 +379,15 @@ color: white;
   text-decoration: none;
   box-shadow: 5px 5px 30px 7px rgba(247, 191, 235, 0.384), -5px -5px 30px 7px rgb(252, 249, 251);
 }
+@media (min-width: 375px) and (max-width: 900px) {
+  .card4 .btn3{
+    position: relative;
+    margin: 1em;
+    left: 15%;
+    top: 50%;
+  }
+  
+}
 .card4 .btn3 a{
     text-decoration: none;
     color: white;
@@ -244,7 +397,13 @@ color: white;
   position: absolute;
   margin: 1.5em;
 }
-
+@media (min-width: 375px) and (max-width: 900px) {
+  .card4 h1{
+    position: absolute;
+    font-size: 100%;
+    margin: 2.5em;
+  }
+}
 
 footer {
   position: absolute;
@@ -296,7 +455,14 @@ footer#site-footer #footer-logo {
   margin-right: auto;
   flex-shrink: 0;
 }
+@media (min-width: 375px) and (max-width: 900px) {
+  footer#site-footer #footer-logo {
+    position: absolute;
+   margin: 5em;
+   top: 20%;
 
+  }
+}
 footer#site-footer #footer-logo img {
   height: 2.28rem;
 }
@@ -409,6 +575,7 @@ footer#site-footer #footer-about address {
   font-weight: bold;
 }
 
+
 footer#site-footer #footer-about address p img {
   margin-right: 0.68rem;
 }
@@ -441,22 +608,27 @@ footer#site-footer #footer-social-buttons img:hover {
 
 
 
-@media screen and (max-width: 959px) {
+@media (min-width: 375px) and (max-width: 900px) {
 
   footer#site-footer {
       width: 100%;
   }
+}
 
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer section.horizontal-footer-section {
       flex-direction: column;
       flex-wrap: wrap;
   }
+}
 
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer section.horizontal-footer-section div {
       flex-basis: 100%;
       width: 100%;
   }
-
+}
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer ul li {
       display: block !important;
       padding: 1em !important;
@@ -466,81 +638,89 @@ footer#site-footer #footer-social-buttons img:hover {
       border-right: none;
       font-size: 1.15rem !important;
   }
+}
 
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer ul li:first-child {
       border-top: none;
   }
-
+}
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer a.footer-button {
       display: block;
       text-align: center;
       max-width: 350px;
       margin: 0.32rem auto;
   }
-
+}
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer section.horizontal-footer-section#footer-top-section div {
       margin-top: 0;
       margin-bottom: 1.68rem;
   }
-
-  footer#site-footer #footer-logo {
-      margin-right: 0;
-  }
-
-  footer#site-footer #footer-buttons-container {
-      margin-left: 0;
-  }
-
+}
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer ul#footer-top-menu {
       width: 100%;
       margin: 2rem 0 0 0;
   }
-
+}
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer .footer-top-menu-item-active::before {
       display: none;
   }
-
+}
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer #footer-about {
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
+      left: 50%
   }
-
+}
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer .footer-columns-large,
   footer#site-footer .footer-columns {
       padding-right: 0;
   }
-
+}
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer .footer-columns {
       margin-top: 0;
       margin-bottom: 4rem;
   }
-
+}
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer .footer-columns:last-child {
       margin-bottom: 0;
   }
-
+}
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer .footer-columns h1 {
       text-align: center;
       font-size: 1.3rem;
       text-transform: uppercase;
       letter-spacing: 0.15rem;
   }
-
+}
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer ul.footer-column-menu li {
       margin-bottom: 0;
       display: block;
       text-align: center;
   }
-
+}
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer section#footer-bottom-section div {
       text-align: center;
   }
-
+}
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer section.horizontal-footer-section#footer-bottom-section {
       margin: 1.32rem 0;
       padding: 0;
       border-top: 0;
   }
-
+}
+@media (min-width: 375px) and (max-width: 900px) {
   footer#site-footer section#footer-bottom-section #footer-social-buttons {
       margin-top: 1.32rem;
   }
